@@ -5,6 +5,7 @@ import dice3 from "../img/dice3.jpg"
 import dice4 from "../img/dice4.jpg"
 import dice5 from "../img/dice5.jpg"
 import dice6 from "../img/dice6.jpg"
+import "../App.css";
 import { useParams } from "react-router-dom";
 
 export const RollTheDice = () => {
