@@ -1,6 +1,6 @@
+import { useParams } from "react-router-dom";
 import react, { useState } from "react";
 import "../App.css";
-import { useParams } from "react-router-dom";
 
 export const Welcome = (props) => {
 

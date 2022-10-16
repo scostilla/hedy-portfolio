@@ -1,4 +1,4 @@
-A-
+A- FUNCIONANDO
 Crear un script que al presionar un boton 
 despliegue en la pantalla la imagen de una cara aleatoria de
 un dado de 6 caras.
@@ -7,7 +7,7 @@ Renderizar un mensaje que
 indique el valor de la cara del 
 dado desplegada en el momento.
 
-B-
+B- FUNCIONANDO
 Usar un componente de clase para renderizar un mensaje de bienvenida y
 un nombre. 
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 import { RollTheDice } from "./RollTheDice.js";
 import { Welcome } from "./Welcome.js";
+import { Users } from "./Users.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
@@ -19,10 +20,13 @@ const Home = () => {
           onChange={(e) => setName(e.target.value)}
           placeholder="ingrese su nombre"
         />
+        <p />
+        <Link to={"./Users"}>Actividad 3 - Componente Usuarios  </Link>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
           <Route path="/Welcome" element={<Welcome name={getName} />} />
+          <Route path="/Users" element={<Users />} />
         </Routes>
       </div>
     </Router>
