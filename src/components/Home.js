@@ -3,10 +3,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 import { RollTheDice } from "./RollTheDice.js";
 import { Welcome } from "./Welcome.js";
-import { Users } from "./Users.js";
+import { UsersComponent } from "./UsersComponent.js";
+import { UsersFunction } from "./UsersFunction.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
+  const [getUserName, setUserName] = useState("");
+  const [getFirstName, setFirstName] = useState("");
+  const [getLastName, setLastName] = useState("");
 
   return (
     <Router>
@@ -21,12 +25,34 @@ const Home = () => {
           placeholder="ingrese su nombre"
         />
         <p />
-        <Link to={"./Users"}>Actividad 3 - Componente Usuarios  </Link>
+        <Link to={"./UsersComponent"}>Actividad 3 - Componente Usuarios  </Link>
+        <p />
+        <Link to={"./UsersFunction"}>Actividad 4 - Funcion Usuarios  </Link>
+        <input
+          type="text"
+          value={getUserName}
+          onChange={(e) => setUserName(e.target.value)}
+          placeholder="Nombre de usuario"
+        />
+        <input
+          type="text"
+          value={getFirstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          placeholder="Nombre"
+        />
+        <input
+          type="text"
+          value={getLastName}
+          onChange={(e) => setLastName(e.target.value)}
+          placeholder="Apellido"
+        />
+        <p />
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
           <Route path="/Welcome" element={<Welcome name={getName} />} />
-          <Route path="/Users" element={<Users />} />
+          <Route path="/UsersComponent" element={<UsersComponent />} />
+          <Route path="/UsersFunction" element={<UsersFunction userName={getUserName} firstName={getFirstName} lastName={getLastName} />} />
         </Routes>
       </div>
     </Router>

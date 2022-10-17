@@ -4,7 +4,6 @@ import "../App.css";
 
 export const Welcome = (props) => {
 
-    console.log(props.name);
     return(
   <div>
     <h1>Bienvenido {props.name}</h1>

@@ -11,15 +11,14 @@ B- FUNCIONANDO
 Usar un componente de clase para renderizar un mensaje de bienvenida y
 un nombre. 
 
-C-
+C- FUNCIONANDO
 Crear un componente usuarios que contenga 3 usuarios (ID,nombre,apellido) 
 Desplegarlos en la pagina
 
-D-
+D- REVISAR ARCHIVO UserFunction.js EL ELEMENTO props
 Desplegar en la pagina el componente de la clase anterior PERO:
 1-rescribiendolo como componente de función. 
 2-pasandole un prop a por lo menos 1 de los elementos a travez del componente padre.
-3- (Opcional) tratar de darle algo de CSS a nuestro o nuestros componentes
 
 E-
 1-Crear un componente que renderize la marca de un auto, un contador, y un boton.
