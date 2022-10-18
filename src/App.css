@@ -143,3 +143,10 @@ text-align: center;
 .left{
 text-align: left;
 }
+
+.new-background{
+  background-color: rgb(169, 165, 214);
+}
+.original-background{
+  background-color: gainsboro;
+}

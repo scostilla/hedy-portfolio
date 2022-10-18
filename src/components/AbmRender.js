@@ -4,21 +4,22 @@ import "../App.css";
 
 export const AbmRender = (props) => {
     const [abmClass, SetAbmClass] = useState("abm-container-red");
+    const [getBackgroundColor,setBackgroundColor] = useState("original-background");
   
     if (!props.flag) return null;
   
     const ChangeColor = () => {
-      if (abmClass === "abm-container-red") {
-        SetAbmClass("abm-container-yellow");
-        console.log(abmClass);
+      if (getBackgroundColor === "original-background") {
+        setBackgroundColor("new-background");
+        console.log(getBackgroundColor);
       } else {
-        SetAbmClass("abm-container-red");
-        console.log(abmClass);
+        setBackgroundColor("original-background");
+        console.log(getBackgroundColor);
       }
     };
   
     return (
-      <div>
+      <div className={getBackgroundColor}>
         <div>
           <h1 className="abm-title">Super ABM</h1>
           <br></br>
@@ -31,7 +32,7 @@ export const AbmRender = (props) => {
             <input type="text"></input>
             <button type="submit">Submit me</button>
           </div>
-          <button onClick={() => ChangeColor()}>Change my ABM background</button>
+          <button onClick={() => ChangeColor()}>Cambiar color de fondo</button>
         </div>
       </div>
     );

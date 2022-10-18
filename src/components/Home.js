@@ -56,7 +56,7 @@ const Home = () => {
         <Link to={"./AsyncFunction"}>Actividad 6 - funcion asincronica  </Link>
         <p />
         <Link to={"./AbmRender"}>Actividad 7 - Renderizado  </Link>
-        <input type="Checkbox" value={getFlag} onChange={(e) => {setFlag(e.target.checked)}} /><label>Activar Bandera</label>
+        <input type="Checkbox" value={getFlag} onChange={(e) => {setFlag(e.target.checked)}} /><label>Activar CheckBox para renderizar</label>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
