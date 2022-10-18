@@ -6,6 +6,7 @@ import { Welcome } from "./Welcome.js";
 import { UsersComponent } from "./UsersComponent.js";
 import { UsersFunction } from "./UsersFunction.js";
 import { Cars } from "./Cars.js";
+import { AsyncFunction } from "./AsyncFunction.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
@@ -50,6 +51,7 @@ const Home = () => {
         <p />
         <Link to={"./Cars"}>Actividad 5 - Autos y Suma Aleatoria  </Link>
         <p />
+        <Link to={"./AsyncFunction"}>Actividad 6 - funcion asincronica  </Link>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
@@ -57,6 +59,7 @@ const Home = () => {
           <Route path="/UsersComponent" element={<UsersComponent />} />
           <Route path="/UsersFunction" element={<UsersFunction userName={getUserName} firstName={getFirstName} lastName={getLastName} />} />
           <Route path="/Cars" element={<Cars />} />
+          <Route path="/AsyncFunction" element={<AsyncFunction />} />
         </Routes>
       </div>
     </Router>
