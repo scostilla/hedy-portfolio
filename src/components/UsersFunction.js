@@ -22,12 +22,12 @@ export function UsersFunction(props) {
       firstName: "Paula",
       lastName: "Costilla Capobianco",
     },
-    /* {
+    {
       id: 4,
-      userName: { props.userName },
-      firstName: { props.firstName },
-      lastName: { props.lastName },
-    }, */
+      userName: props.userName,
+      firstName: props.firstName,
+      lastName: props.lastName,
+    },
   ]);
 
   return (
@@ -44,10 +44,6 @@ export function UsersFunction(props) {
               <td>{user.lastName}</td>
             </tr>
           ))}
-          <tr>
-              <td>{props.userName}</td> <td>{props.firstName}</td>{" "}
-              <td>{props.lastName}</td>
-            </tr>
         </table>
       </p>
     </div>
