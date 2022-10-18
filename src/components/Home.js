@@ -5,6 +5,7 @@ import { RollTheDice } from "./RollTheDice.js";
 import { Welcome } from "./Welcome.js";
 import { UsersComponent } from "./UsersComponent.js";
 import { UsersFunction } from "./UsersFunction.js";
+import { Cars } from "./Cars.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
@@ -47,12 +48,15 @@ const Home = () => {
           placeholder="Apellido"
         />
         <p />
+        <Link to={"./Cars"}>Actividad 5 - Autos y Suma Aleatoria  </Link>
+        <p />
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
           <Route path="/Welcome" element={<Welcome name={getName} />} />
           <Route path="/UsersComponent" element={<UsersComponent />} />
           <Route path="/UsersFunction" element={<UsersFunction userName={getUserName} firstName={getFirstName} lastName={getLastName} />} />
+          <Route path="/Cars" element={<Cars />} />
         </Routes>
       </div>
     </Router>
