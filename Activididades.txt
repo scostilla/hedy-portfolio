@@ -15,7 +15,7 @@ C- FUNCIONANDO
 Crear un componente usuarios que contenga 3 usuarios (ID,nombre,apellido) 
 Desplegarlos en la pagina
 
-D- REVISAR ARCHIVO UserFunction.js EL ELEMENTO props
+D- FUNCIONANDO
 Desplegar en la pagina el componente de la clase anterior PERO:
 1-rescribiendolo como componente de función. 
 2-pasandole un prop a por lo menos 1 de los elementos a travez del componente padre.
