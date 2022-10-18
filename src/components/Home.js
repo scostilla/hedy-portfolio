@@ -7,12 +7,14 @@ import { UsersComponent } from "./UsersComponent.js";
 import { UsersFunction } from "./UsersFunction.js";
 import { Cars } from "./Cars.js";
 import { AsyncFunction } from "./AsyncFunction.js";
+import { AbmRender} from "./AbmRender.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
   const [getUserName, setUserName] = useState("");
   const [getFirstName, setFirstName] = useState("");
   const [getLastName, setLastName] = useState("");
+  const [getFlag, setFlag] = useState("");
 
   return (
     <Router>
@@ -52,6 +54,9 @@ const Home = () => {
         <Link to={"./Cars"}>Actividad 5 - Autos y Suma Aleatoria  </Link>
         <p />
         <Link to={"./AsyncFunction"}>Actividad 6 - funcion asincronica  </Link>
+        <p />
+        <Link to={"./AbmRender"}>Actividad 7 - Renderizado  </Link>
+        <input type="Checkbox" value={getFlag} onChange={(e) => {setFlag(e.target.checked)}} /><label>Activar Bandera</label>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
@@ -60,6 +65,7 @@ const Home = () => {
           <Route path="/UsersFunction" element={<UsersFunction userName={getUserName} firstName={getFirstName} lastName={getLastName} />} />
           <Route path="/Cars" element={<Cars />} />
           <Route path="/AsyncFunction" element={<AsyncFunction />} />
+          <Route path="/AbmRender" element={<AbmRender flag={getFlag} />} />
         </Routes>
       </div>
     </Router>

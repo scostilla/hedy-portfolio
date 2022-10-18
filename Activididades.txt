@@ -32,13 +32,13 @@ un componente reactivo que sea una lista
 a eleccion del programador
 (tiene que usar useState)
 
-F- 
+F- FUNCIONANDO
 Crear una api de prueba, 
 extraer datos de la misma con funciones asincronicas o promesas,
 renderizar estos datos (Pueden usar funciones como map o filter)
 OPCIONAL: darle un poco de css a la aplicacion web.
 
-G-
+G- FUNCIONANDO  
 1-Hacer un ABM (no funcional) que se renderize o no 
 en base al click de un boton que este en el elemento padre
 2- Cambiar el css de este abm en base al click de un boton 
