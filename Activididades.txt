@@ -44,7 +44,7 @@ en base al click de un boton que este en el elemento padre
 2- Cambiar el css de este abm en base al click de un boton 
 (puede estar en el componente del abm o en el padre)
 
-H-
+H- FUNCIONANDO mejorar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 1-Crear una API que tenga por lo menos 5 objetos (no pueden ser usuarios)
 y que cada uno de esos objetos tenga por lo menos 3 propiedades.
 2-crear un metodo get que reciba la informacion de alguno de esos 5 objetos
@@ -55,7 +55,7 @@ renderizar en la pagina la informacion que se cargo.
 4-Crear un metodo delete que borre alguno de los objetos de la API
 y que renderize en la pagina la id o algun identificador del objeto borrado.
 
-I-
+I- FUNCIONANDO
 Tomar datos de la api https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false
 Y renderizar el nombre, simbolo, precio actual, MCR, MC e imagen de todos los objetos utilizando AXIOS.
 opcional: Utilizar CSS para desplegar los datos de una forma ordenada
