@@ -1,4 +1,4 @@
-A- FUNCIONANDO
+1- FUNCIONANDO
 Crear un script que al presionar un boton 
 despliegue en la pantalla la imagen de una cara aleatoria de
 un dado de 6 caras.
@@ -7,20 +7,20 @@ Renderizar un mensaje que
 indique el valor de la cara del 
 dado desplegada en el momento.
 
-B- FUNCIONANDO
+2- FUNCIONANDO
 Usar un componente de clase para renderizar un mensaje de bienvenida y
 un nombre. 
 
-C- FUNCIONANDO
+3- FUNCIONANDO
 Crear un componente usuarios que contenga 3 usuarios (ID,nombre,apellido) 
 Desplegarlos en la pagina
 
-D- FUNCIONANDO
+4- FUNCIONANDO
 Desplegar en la pagina el componente de la clase anterior PERO:
 1-rescribiendolo como componente de función. 
 2-pasandole un prop a por lo menos 1 de los elementos a travez del componente padre.
 
-E- FUNCIONANDO
+5- FUNCIONANDO
 1-Crear un componente que renderize la marca de un auto, un contador, y un boton.
 2-Al hacer click en la marca del auto, el componente se tiene que poder re renderizar
 y mostrar otra marca a eleccion del programador.
@@ -32,19 +32,19 @@ un componente reactivo que sea una lista
 a eleccion del programador
 (tiene que usar useState)
 
-F- FUNCIONANDO
+6- FUNCIONANDO
 Crear una api de prueba, 
 extraer datos de la misma con funciones asincronicas o promesas,
 renderizar estos datos (Pueden usar funciones como map o filter)
 OPCIONAL: darle un poco de css a la aplicacion web.
 
-G- FUNCIONANDO  
+7- FUNCIONANDO  
 1-Hacer un ABM (no funcional) que se renderize o no 
 en base al click de un boton que este en el elemento padre
 2- Cambiar el css de este abm en base al click de un boton 
 (puede estar en el componente del abm o en el padre)
 
-H- FUNCIONANDO mejorar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+8- FUNCIONANDO mejorar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 1-Crear una API que tenga por lo menos 5 objetos (no pueden ser usuarios)
 y que cada uno de esos objetos tenga por lo menos 3 propiedades.
 2-crear un metodo get que reciba la informacion de alguno de esos 5 objetos
@@ -55,7 +55,7 @@ renderizar en la pagina la informacion que se cargo.
 4-Crear un metodo delete que borre alguno de los objetos de la API
 y que renderize en la pagina la id o algun identificador del objeto borrado.
 
-I- FUNCIONANDO
+9- FUNCIONANDO
 Tomar datos de la api https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false
 Y renderizar el nombre, simbolo, precio actual, MCR, MC e imagen de todos los objetos utilizando AXIOS.
 opcional: Utilizar CSS para desplegar los datos de una forma ordenada
@@ -63,3 +63,17 @@ opcional: Utilizar CSS para desplegar los datos de una forma ordenada
 vamos a recibir un objeto iterable, probablemente querramos
 utilizar una funcion como map para renderizar correctamente
 nuestro componente
+
+10- FUNCIONANDO
+1-Hacer un componente que renderice un titulo y un parrafo(Lorem ipsum)
+2-Al hacer click en el titulo se tiene que poder actualizar 
+el posicionamiento del mismo (izquierda,centrado,derecha). 
+3- Cuando el usuario toque una tecla especifica el color 
+y la fuente del parrafo tienen que actualizarse 
+(Tiene que haber 3 presets como minimo).
+
+11- FUNCIONANDO
+Al hacer un submit.Renderizar el nombre y una imagen de un personaje 
+en base al input del usuario.
+
+Opcional: Darle estilo a la vista con CSS

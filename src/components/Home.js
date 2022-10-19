@@ -10,6 +10,8 @@ import { AsyncFunction } from "./AsyncFunction.js";
 import { AbmRender } from "./AbmRender.js";
 import { AbmFetch } from "./AbmFetch.js";
 import { AbmAxios } from "./AbmAxios.js";
+import { EventParagraph } from "./Paragraph";
+import { ReactForms } from "./ReactForms.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
@@ -63,6 +65,10 @@ const Home = () => {
         <Link to={"./AbmFetch"}>Actividad 8 - Fetch  </Link>
         <p />
         <Link to={"./AbmAxios"}>Actividad 9 - Axios  </Link>
+        <p />
+        <Link to={"./EventParagraph"}>Actividad 10 - Eventos  </Link>
+        <p />
+        <Link to={"./ReactForms"}>Actividad 11 - Formularios  </Link>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
@@ -74,6 +80,8 @@ const Home = () => {
           <Route path="/AbmRender" element={<AbmRender flag={getFlag} />} />
           <Route path="/AbmFetch" element={<AbmFetch />} />
           <Route path="/AbmAxios" element={<AbmAxios />} />
+          <Route path="/EventParagraph" element={<EventParagraph />} />
+          <Route path="/ReactForms" element={<ReactForms />} />
         </Routes>
       </div>
     </Router>
