@@ -1,29 +1,27 @@
-import { useState } from 'react';
+import React, { useState } from "react";
 
+/*FATHER COMPONENT */
 export default function SyncedInputs() {
+  const [text, setText] = useState("");
+
+  const handleChange = (e) => {
+        setText(e.target.value);
+  }
+
   return (
     <>
-      <Input label="First input" />
-      <Input label="Second input" />
+      {/* <Input label="Primer input" onTextChange={handleChange} /> */}
+      <SyncedInput label="Primer input" sentValue={text} onTextChange={handleChange} />
+      <SyncedInput label="Segundo input" sentValue={text} onTextChange={handleChange} />
     </>
   );
 }
 
-function Input({ label }) {
-  const [text, setText] = useState('');
-
-  function handleChange(e) {
-    setText(e.target.value);
-  }
-
+/*SON COMPONENT */
+function SyncedInput(props) {
   return (
     <label>
-      {label}
-      {' '}
-      <input
-        value={text}
-        onChange={handleChange}
-      />
+      {props.label} <input value={props.sentValue}  onChange={props.onTextChange} />
     </label>
   );
 }
