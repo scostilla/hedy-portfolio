@@ -13,6 +13,7 @@ import { AbmAxios } from "./AbmAxios.js";
 import { EventParagraph } from "./Paragraph";
 import { ReactForms } from "./ReactForms.js";
 import SyncedInputs from "./SyncedInputs.js";
+import ContextMain  from "./ContextMain.js";
 
 const Home = () => {
   const [getName, setName] = useState("");
@@ -79,6 +80,8 @@ const Home = () => {
         <Link to={"./ReactForms"}>Actividad 11 - Formularios </Link>
         <p />
         <Link to={"./SyncedInputs"}>Actividad 12 - Input Sincronizados </Link>
+        <p />
+        <Link to={"./ContextMain"}>Actividad 13 - React Context </Link>
 
         <Routes>
           <Route path="/RollTheDice" element={<RollTheDice />} />
@@ -102,6 +105,7 @@ const Home = () => {
           <Route path="/EventParagraph" element={<EventParagraph />} />
           <Route path="/ReactForms" element={<ReactForms />} />
           <Route path="/SyncedInputs" element={<SyncedInputs />} />
+          <Route path="./ContextMain" element={<ContextMain />} />
         </Routes>
       </div>
     </Router>
