@@ -105,7 +105,7 @@ const Home = () => {
           <Route path="/EventParagraph" element={<EventParagraph />} />
           <Route path="/ReactForms" element={<ReactForms />} />
           <Route path="/SyncedInputs" element={<SyncedInputs />} />
-          <Route path="./ContextMain" element={<ContextMain />} />
+          <Route path="/ContextMain" element={<ContextMain />} />
         </Routes>
       </div>
     </Router>

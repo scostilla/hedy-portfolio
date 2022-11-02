@@ -1,13 +1,12 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { places } from "./data.js";
 import { getImageUrl } from "./utils.js";
-import { ImageSizeContext } from "./Context.js";
 
-export default function ContextMain() {
+export default function App() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
   return (
-    <ImageSizeContext.Provider value={imageSize}>
+    <>
       <label>
         <input
           type="checkbox"
@@ -19,24 +18,24 @@ export default function ContextMain() {
         Use large images
       </label>
       <hr />
-      <List />
-    </ImageSizeContext.Provider>
+      <List imageSize={imageSize} />
+    </>
   );
 }
 
-function List() {
+function List({ imageSize }) {
   const listItems = places.map((place) => (
     <li key={place.id}>
-      <Place place={place} />
+      <Place place={place} imageSize={imageSize} />
     </li>
   ));
   return <ul>{listItems}</ul>;
 }
 
-function Place({ place }) {
+function Place({ place, imageSize }) {
   return (
     <>
-      <PlaceImage place={place} />
+      <PlaceImage place={place} imageSize={imageSize} />
       <p>
         <b>{place.name}</b>
         {": " + place.description}
@@ -45,8 +44,7 @@ function Place({ place }) {
   );
 }
 
-function PlaceImage({ place }) {
-  const imageSize = useContext(ImageSizeContext);
+function PlaceImage({ place, imageSize }) {
   return (
     <img
       src={getImageUrl(place)}
